@@ -1,0 +1,58 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:pretty="http://ocpsoft.com/prettyfaces"
+                template="/WEB-INF/layout/template.xhtml">
+                
+	<ui:define name="head">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="#{cpath}/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+		<link rel="stylesheet" href="#{cpath}/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".prodotto a").fancybox();
+			});
+		</script>
+	</ui:define>                       
+                
+	<ui:define name="content">
+
+	<div class="prodotti">
+
+		<div class="linea">
+			<h3><a name="massello">Linea massello</a></h3>
+
+			<p>
+			Linea di astucci con telaio in massello, disponibile in varie misure, finiture ed allestimenti interni. Minuteria applicata ottonata, ampia possibilità 			di personalizzazione su misure, minuterie e finiture.
+			</p>
+
+			<div class="prodotto">
+				<a href="#{cpath}/img/img.jpg" title="blah blah blah"><img src="#{cpath}/img/img.jpg"/></a>
+				<label>blah blah blah</label>
+			</div>
+			
+		</div>
+
+		<div class="linea">
+			<h3><a name="altro">Altro</a></h3>
+
+			<p>
+			Linea di astucci con telaio in massello, disponibile in varie misure, finiture ed allestimenti interni. Minuteria applicata ottonata, ampia possibilità 			di personalizzazione su misure, minuterie e finiture.
+			</p>
+
+			<div class="prodotto">
+				<img src="#{cpath}/img/img2.jpg"/>
+				<label>altro....</label>
+			</div>
+			
+
+		</div>
+
+	</div>
+	
+	</ui:define>                
+                
+</ui:composition>                

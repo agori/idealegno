@@ -1,0 +1,17 @@
+package it.idealegno.beans;
+
+import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.inject.Produces;
+import javax.faces.context.FacesContext;
+import javax.inject.Named;
+
+@ApplicationScoped
+@Named
+public class ProdottiBean {
+	
+	@Named @Produces
+	public String getCpath() {
+		return FacesContext.getCurrentInstance().getExternalContext().getRequestContextPath();
+	}
+
+}

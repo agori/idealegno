@@ -1,6 +1,6 @@
 
 body {
-	font: 78.5%/1.6em "Lucida Grande", "Lucida Sans Unicode", verdana, geneva, sans-serif;
+	font: 78.5%/1.6em verdana, geneva, sans-serif;
 	word-spacing:2px;
 	color:#444;
 	margin:20px;
@@ -30,7 +30,7 @@ body {
 #innerwrapper {
 	margin:1px;
 	background:url(../images/innerwrapper.jpg) top repeat-x;
-	padding:20px;
+	padding:20px 20px 0px 20px;
 }
 
 #header input {
@@ -152,7 +152,7 @@ body {
 
 #sidebar {
 	background:#333;
-	width:200px;
+	width:20%;
 	padding:10px 20px 20px 20px;
 	float:left;
 	color:#666;
@@ -236,55 +236,10 @@ body {
 	width:190px;
 }
 
-#sidebarright {
-	width:170px;
-	float:right;
-	padding:10px 0 0 20px;
-	background:url(../images/sidebarright.jpg) top left no-repeat;
-}
-
-#sidebarright p {
-	font:90% Verdana;
-	color:#777;
-	line-height:20px;
-	margin:10px 0;
-}
-
-#sidebarright h2 {
-	font:140% Arial;
-	color:#333;
-	margin:10px 0;
-	border:none;
-}
-
-#sidebarright ul {
-	margin:10px 0 10px 15px;
-	font:90% Verdana;
-}
-
-#sidebarright ul li {
-	margin:5px 0;
-}
-
-#sidebarright a {
-	border-bottom:1px dotted #eee;
-	color:#444;
-	text-decoration:none;
-}
-
-#sidebarright a:hover {
-	border-bottom:1px solid #ccc;
-}
-
-
-#content {
-	margin:0 210px 0 240px;
-	background:url(../images/content.jpg) top left no-repeat;
-	padding:20px 0 0 20px;
-}
-
 #contentnorightbar {
-	margin:0 0 0 240px;
+	margin:0 0 0 0px;
+	float:left;
+	width: 72%;
 	background:url(../images/content.jpg) top left no-repeat;
 	padding:20px 0 0 20px;
 }
@@ -331,74 +286,3 @@ h3 {
 	margin:10px 0;
 }
 
-#content ul {
-	margin:15px 0 15px 0;
-	line-height:25px;
-	padding:15px 0 15px 15px;
-	border-top:1px solid #eee;
-	border-bottom:1px solid #eee;
-	color:#79B933;
-}
-#content ul span {
-	color:#444;
-}
-#contentnorightbar ul {
-	margin:15px 0 15px 20px;
-	line-height:25px;
-	padding:15px 0;
-	border-top:1px solid #eee;
-	border-bottom:1px solid #eee;
-	color:#79B933;
-}
-#contentnorightbar ul span {
-	color:#444;
-}
-
-img {
-	padding:1px;
-	background:#ccc;
-	border:4px solid #f6f6f6;
-}
-
-form {
-	padding:10px;
-	border:1px solid #f6f6f6;
-}
-
-label {
-	display:block;
-	font-weight:bold;
-	color:#444;
-	margin:5px 0;
-
-}
-input {
-	width:300px;
-	padding:4px;
-	border:none;
-	border-bottom:1px dotted #ccc;
-	font:90% Verdana;
-	color:#777;
-}
-
-textarea {
-	width:400px;
-	padding:4px;
-	font:90% Verdana;
-	border:1px solid #eee;
-	height:200px;
-	display:block;
-	color:#777;
-}
-
-p img {
-	float:left;
-	margin:0 10px 0 0;
-}
-
-blockquote p {
-	font:160% Georgia;
-	color:#aaa;
-	padding:0 10% 0 0;
-	line-height:30px;
-}

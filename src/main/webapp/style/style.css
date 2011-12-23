@@ -3,7 +3,9 @@
 }
 
 .prodotti .linea {
-	
+	width: 100%;
+	overflow: auto;
+	margin-bottom: 3em;
 }
 
 .prodotti .linea h3 {
@@ -14,16 +16,55 @@
 	
 }
 
-
-.prodotto {
+.linea ul {
+	clear:left;
 }
 
-.prodotto img {
+.linea li {
+	float:left;
+	width: 23%;
+	list-style-type: none;
+	text-align: center;
+	padding: 8px 0 0 8px;
 }
 
 
-.prodotto label {
-	position:relative;
-	top: -5px;
-	margin: 0px;
+
+.linea li.selected {
+
+}
+
+.linea li a {
+	display: block;
+}
+
+.linea li img {
+}
+
+
+.linea li label {
+	font-weight: bold;
+	display: block;
+}
+
+
+
+#contattiWrapper {
+	margin-top: 20px;
+}
+
+.contatti {
+	float:left;
+	width: 40%;
+}
+
+.contatti label {
+	float:left;
+	width:30%;
+	clear:left;
+}
+
+.contatti div {
+	float:left;
+	width: 70%;
 }

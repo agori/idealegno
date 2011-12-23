@@ -13,7 +13,11 @@
 		<link rel="stylesheet" href="#{cpath}/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
 		<script type="text/javascript">
 			$(document).ready(function() {
-				$(".prodotto a").fancybox();
+				$(".linea li").bind("mouseover mouseout", function() {
+					$(this).toggleClass('selected');
+				});
+
+				$(".linea li a").fancybox();
 			});
 		</script>
 	</ui:define>                       
@@ -28,12 +32,28 @@
 			<p>
 			Linea di astucci con telaio in massello, disponibile in varie misure, finiture ed allestimenti interni. Minuteria applicata ottonata, ampia possibilità 			di personalizzazione su misure, minuterie e finiture.
 			</p>
-
-			<div class="prodotto">
-				<a href="#{cpath}/img/img.jpg" title="blah blah blah"><img src="#{cpath}/img/img.jpg"/></a>
-				<label>blah blah blah</label>
-			</div>
 			
+			<ul>
+			<li>
+				<a href="#{cpath}/img/g1.jpg" title="blah blah blah"><img src="#{cpath}/img/g1.jpg"/></a>
+				<label>blah blah blah</label>
+			</li>
+
+			<li>
+				<a href="#{cpath}/img/g2.jpg" title="blah blah blah"><img src="#{cpath}/img/g2.jpg"/></a>
+				<label>blah blah blah</label>
+			</li>
+
+			<li>
+				<a href="#{cpath}/img/g3.jpg" title="blah blah blah"><img src="#{cpath}/img/g3.jpg"/></a>
+				<label>blah blah blah</label>
+			</li>
+
+			<li>
+				<a href="#{cpath}/img/g4.jpg" title="blah blah blah"><img src="#{cpath}/img/g4.jpg"/></a>
+				<label>blah blah blah</label>
+			</li>
+			</ul>
 		</div>
 
 		<div class="linea">
@@ -42,13 +62,25 @@
 			<p>
 			Linea di astucci con telaio in massello, disponibile in varie misure, finiture ed allestimenti interni. Minuteria applicata ottonata, ampia possibilità 			di personalizzazione su misure, minuterie e finiture.
 			</p>
-
-			<div class="prodotto">
-				<img src="#{cpath}/img/img2.jpg"/>
+			<ul>
+			<li>
+				<a href="#{cpath}/img/g5.jpg" title="blah blah blah"><img src="#{cpath}/img/g5.jpg"/></a>
 				<label>altro....</label>
-			</div>
-			
-
+			</li>
+	
+			<li>
+				<a href="#{cpath}/img/g6.jpg" title="blah blah blah"><img src="#{cpath}/img/g6.jpg"/></a>
+				<label>altro....</label>
+			</li>
+			<li>
+				<a href="#{cpath}/img/g7.jpg" title="blah blah blah"><img src="#{cpath}/img/g7.jpg"/></a>
+				<label>altro....</label>
+			</li>			
+			<li>
+				<a href="#{cpath}/img/g8.jpg" title="blah blah blah"><img src="#{cpath}/img/g8.jpg"/></a>
+				<label>altro....</label>
+			</li>
+			</ul>	
 		</div>
 
 	</div>

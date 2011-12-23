@@ -28,5 +28,10 @@
           <view-id value="/prodotti.xhtml" />
       </url-mapping> 
 
+      <url-mapping id="news"> 
+          <pattern value="/news" /> 
+          <view-id value="/news.xhtml" />
+      </url-mapping> 
+
     
 </pretty-config>

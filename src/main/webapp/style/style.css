@@ -41,8 +41,8 @@
      display: block;
 }
 
-.linea li img {
-    
+.linea li a:hover img {
+     border: 2px solid #6A0C0C !important;
 }
 
 .linea li label {

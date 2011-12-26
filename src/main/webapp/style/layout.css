@@ -4,41 +4,51 @@
 }
 
 a {
-     color: brown;
+     color: #6a0c0c;
      text-decoration: none;
 }
 
+.clear {
+	clear:both;
+}
+
 a:visited {
-    color: brown;
+     color: #6a0c0c;
 }
 
 img {
-    border: none;
+     border: none;
 }
 
 html, body {
-     color: #666666;
+     background-image: url("../images/background.jpg");
+     color: #333333;
      font-family: Georgia,Times,'Times New Roman',serif;
      font-size: 100%;
      height: 100%;
-     background-image: url('../images/background.jpg');
 }
 
 #header {
-     background-color: brown;
-     border-bottom: 4px solid #500000 ;
      padding-top: 20px;
      width: 100%;
 }
 
 #innerHeader {
+     background-color: #333333;
+     border: 10px solid #333333;
+     border-bottom: none;
+     border-top-left-radius: 13px;
+     border-top-right-radius: 13px;
      margin: 0pt auto;
      overflow: auto;
+     padding-left: 10px;
+     padding-right: 10px;
+     padding-top: 10px;
      width: 900px;
 }
 
 #header a {
-	color: #ffffff;
+     color: #FFFFFF;
 }
 
 #header h1 {
@@ -52,8 +62,8 @@ html, body {
 }
 
 #header #titles {
-	float:left;
-	width: 50%;
+     float: left;
+     width: 50%;
 }
 
 #header h2 {
@@ -64,20 +74,19 @@ html, body {
 }
 
 #header h3 {
-     color: #cccccc;
+     color: #CCCCCC;
      font-size: small;
      padding-left: 20px;
      padding-top: 8px;
 }
 
 #header #headerContatti {
-	float:right;
-	padding: 5px;
-	border-left: 1px solid #500000;
-	font-size: 0.6em;
-	color: #500000;
-	padding: 10px;
-	line-height: 20px;
+     border-left: 1px solid #eeeeee;
+     color: #eeeeee;
+     float: right;
+     font-size: 0.6em;
+     line-height: 20px;
+     padding: 10px;
 }
 
 #header ul {
@@ -99,51 +108,54 @@ html, body {
      border-top-right-radius: 10px;
      color: #FFFFFF;
      display: block;
-     padding: 4px;
+     padding: 4px 4px 4px 0px;
      text-decoration: none;
 }
 
 #header ul li a:hover, #header ul li a.active {
-     background-color: #500000 ;
+     background-color: #bdb49d;
+     color: #333333;
 }
 
 #wrapper {
-    min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	margin: 0 auto -4em;
+     height: auto ! important;
+     margin: 0pt auto -4em;
+     min-height: 100%;
 }
 
 #content {
-	 line-height:25px;	
+     background-image: url("../images/trasp.png");
+     border: 10px solid #333333;
+     border-top: none;
      font-size: small;
-     margin: 20px auto;
+     line-height: 25px;
+     margin: 0px auto;
+     padding: 10px;
      width: 900px;
+     border-bottom-left-radius: 13px;
+     border-bottom-right-radius: 13px;
 }
 
 #content h2 {
-	margin: 1.3em 0 0.5em 0;
-    color: brown;
+     color: #6a0c0c;
+     margin: 1.3em 0pt 0.5em;
 }
 
 #content h3 {
-	margin: 1.0em 0 0.3em 0;
-    color: brown;
+     color: #6a0c0c;
+     margin: 1em 0pt 0.3em;
 }
 
 #content a:hover {
-    text-decoration: underline;
+     text-decoration: underline;
 }
-
-
 
 #footer, #push {
      height: 4em;
 }
 
 #footer {
-     background-color: #CCCCCC;
-     border-top: 2px solid #666666;
+     color: #FFFFFF;
      width: 100%;
 }
 

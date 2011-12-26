@@ -1,0 +1,156 @@
+* {
+     margin: 0pt;
+     padding: 0pt;
+}
+
+a {
+     color: brown;
+     text-decoration: none;
+}
+
+a:visited {
+    color: brown;
+}
+
+img {
+    border: none;
+}
+
+html, body {
+     color: #666666;
+     font-family: Georgia,Times,'Times New Roman',serif;
+     font-size: 100%;
+     height: 100%;
+     background-image: url('../images/background.jpg');
+}
+
+#header {
+     background-color: brown;
+     border-bottom: 4px solid #500000 ;
+     padding-top: 20px;
+     width: 100%;
+}
+
+#innerHeader {
+     margin: 0pt auto;
+     overflow: auto;
+     width: 900px;
+}
+
+#header a {
+	color: #ffffff;
+}
+
+#header h1 {
+     color: #FFFFFF;
+     float: left;
+     font-size: x-large;
+     font-weight: bold;
+     margin-bottom: 30px;
+     padding-right: 20px;
+     text-transform: uppercase;
+}
+
+#header #titles {
+	float:left;
+	width: 50%;
+}
+
+#header h2 {
+     color: #FFFFFF;
+     font-size: large;
+     padding-left: 20px;
+     padding-top: 8px;
+}
+
+#header h3 {
+     color: #cccccc;
+     font-size: small;
+     padding-left: 20px;
+     padding-top: 8px;
+}
+
+#header #headerContatti {
+	float:right;
+	padding: 5px;
+	border-left: 1px solid #500000;
+	font-size: 0.6em;
+	color: #500000;
+	padding: 10px;
+	line-height: 20px;
+}
+
+#header ul {
+     clear: both;
+     list-style-type: none;
+     width: 100%;
+}
+
+#header ul li {
+     float: left;
+     font-weight: bold;
+     margin-right: 5px;
+     text-align: center;
+     width: 120px;
+}
+
+#header ul li a {
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     color: #FFFFFF;
+     display: block;
+     padding: 4px;
+     text-decoration: none;
+}
+
+#header ul li a:hover, #header ul li a.active {
+     background-color: #500000 ;
+}
+
+#wrapper {
+    min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+
+#content {
+	 line-height:25px;	
+     font-size: small;
+     margin: 20px auto;
+     width: 900px;
+}
+
+#content h2 {
+	margin: 1.3em 0 0.5em 0;
+    color: brown;
+}
+
+#content h3 {
+	margin: 1.0em 0 0.3em 0;
+    color: brown;
+}
+
+#content a:hover {
+    text-decoration: underline;
+}
+
+
+
+#footer, #push {
+     height: 4em;
+}
+
+#footer {
+     background-color: #CCCCCC;
+     border-top: 2px solid #666666;
+     width: 100%;
+}
+
+#innerFooter {
+     font-size: 0.7em;
+     margin: 0pt auto;
+     padding: 10px;
+     text-align: center;
+     width: 900px;
+}

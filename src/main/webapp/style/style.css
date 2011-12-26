@@ -1,70 +1,75 @@
+#preview a {
+	margin: 5px;
+}
+
+
 .prodotti {
-	
+    
 }
 
 .prodotti .linea {
-	width: 100%;
-	overflow: auto;
-	margin-bottom: 3em;
+     margin-bottom: 3em;
+     overflow: auto;
+     width: 100%;
 }
 
 .prodotti .linea h3 {
-	font-size: 190%;
+     font-size: 190%;
 }
 
 .prodotti .linea p {
-	
+    
 }
 
 .linea ul {
-	clear:left;
+     clear: left;
 }
 
 .linea li {
-	float:left;
-	width: 23%;
-	list-style-type: none;
-	text-align: center;
-	padding: 8px 0 0 8px;
+     float: left;
+     list-style-type: none;
+     padding: 8px 0pt 0pt 8px;
+     text-align: center;
+     width: 23%;
 }
 
-
-
 .linea li.selected {
-
+    
 }
 
 .linea li a {
-	display: block;
+     display: block;
 }
 
 .linea li img {
+    
 }
-
 
 .linea li label {
-	font-weight: bold;
-	display: block;
+     display: block;
+     font-weight: bold;
 }
 
-
-
 #contattiWrapper {
-	margin-top: 20px;
+     margin-top: 20px;
 }
 
 .contatti {
-	float:left;
-	width: 40%;
+     float: left;
+     font-size: 0.9em;
+     width: 40%;
 }
 
 .contatti label {
-	float:left;
-	width:30%;
-	clear:left;
+     clear: left;
+     float: left;
+     font-weight: bold;
+     padding: 5px;
+     width: 25%;
 }
 
 .contatti div {
-	float:left;
-	width: 70%;
+     float: left;
+     padding: 5px;
+     width: 60%;
 }

@@ -12,17 +12,7 @@
           <pattern value="/chi-siamo" /> 
           <view-id value="/chisiamo.xhtml" />
       </url-mapping> 
-      
-      <url-mapping id="activity"> 
-          <pattern value="/attivita" /> 
-          <view-id value="/activity.xhtml" />
-      </url-mapping> 
-      
-      <url-mapping id="certs"> 
-          <pattern value="/certificazioni" /> 
-          <view-id value="/certificazioni.xhtml" />
-      </url-mapping> 
-
+ 
       <url-mapping id="prodotti"> 
           <pattern value="/prodotti" /> 
           <view-id value="/prodotti.xhtml" />

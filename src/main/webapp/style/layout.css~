@@ -35,7 +35,7 @@ html, body {
 }
 
 #innerHeader {
-     background-image: url('../images/trasp2.png');
+     background-color: #212121;
      border: 2px solid #212121;
      border-bottom: none;
      border-top-left-radius: 13px;

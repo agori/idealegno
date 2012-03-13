@@ -1,75 +1,59 @@
-#preview a {
-	margin: 5px;
-}
-
-
 .prodotti {
     
 }
 
-.prodotti .linea {
-     margin-bottom: 3em;
-     overflow: auto;
-     width: 100%;
+.prodotti ul.menu {
+	list-style-type: none;
 }
 
-.prodotti .linea h3 {
-     font-size: 190%;
+.prodotti ul.menu li {
+	width: 250px;
+	background-color: #d8b083;
+	text-transform: uppercase;
+	margin: 10px 0;
+	padding: 7px 7px 7px 30px;
+	position:relative;
+	left: -30px;
+	font-weight: bold;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
-.prodotti .linea p {
-    
+.prodotti ul.menu li a {
+	color: #ffffff;
+	width: 100%;
+	display: block;
 }
 
-.linea ul {
-     clear: left;
+.prodotti ul.menu li a.selected {
+	color: #583119;
 }
 
-.linea li {
-     float: left;
-     list-style-type: none;
-     padding: 8px 0pt 0pt 8px;
-     text-align: center;
-     width: 23%;
+
+
+ul#gallery {
+	list-style-type: none;
+	width: 100%;
 }
 
-.linea li.selected {
-    
+#gallery li {
+	float: left;
+	width: 33%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	height: 227px;
 }
 
-.linea li a {
-     display: block;
+#gallery img {
+	margin-left: 10px !important;
 }
 
-.linea li a:hover img {
-     border: 2px solid #6A0C0C !important;
-}
-
-.linea li label {
-     display: block;
-     font-weight: bold;
-}
-
-#contattiWrapper {
-     margin-top: 20px;
-}
-
-.contatti {
+#contatti {
      float: left;
      font-size: 0.9em;
-     width: 30%;
+     width: 37%;
 }
 
-.contatti label {
-     clear: left;
-     float: left;
-     font-weight: bold;
-     padding: 5px;
-     width: 25%;
-}
-
-.contatti div {
-     float: left;
-     padding: 5px;
-     width: 60%;
+#contatti img {
+	margin-left: 0px !important;
 }

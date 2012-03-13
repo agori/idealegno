@@ -1,17 +1,30 @@
 package it.idealegno.bean;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.enterprise.inject.Produces;
-import javax.faces.context.FacesContext;
+import java.util.List;
+
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;
 
-@ApplicationScoped
+@RequestScoped
 @Named
 public class ProdottiBean {
 	
-	@Named @Produces
-	public String getCpath() {
-		return FacesContext.getCurrentInstance().getExternalContext().getRequestContextPath();
+	private String category = DataStore.COMP_ACC;
+	
+	public void loadProdotti() {
+		System.out.println(getCategory());
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+	
+	public List<Item> getProdotti() {
+		return DataStore.store.get(category).getItems();
 	}
 
 }

@@ -9,18 +9,24 @@
       </url-mapping> 
 
       <url-mapping id="chi-siamo"> 
-          <pattern value="/chi-siamo" /> 
+          <pattern value="/azienda" /> 
           <view-id value="/chisiamo.xhtml" />
       </url-mapping> 
  
       <url-mapping id="prodotti"> 
           <pattern value="/prodotti" /> 
           <view-id value="/prodotti.xhtml" />
+      </url-mapping>
+      
+      <url-mapping id="category"> 
+          <pattern value="/prodotti/#{category:prodottiBean.category}" /> 
+          <view-id value="/prodotti.xhtml" />
+          <action>#{prodottiBean.loadProdotti}</action>
       </url-mapping> 
 
-      <url-mapping id="news"> 
-          <pattern value="/news" /> 
-          <view-id value="/news.xhtml" />
+      <url-mapping id="activity"> 
+          <pattern value="/attivita" /> 
+          <view-id value="/activity.xhtml" />
       </url-mapping> 
 
     

@@ -22,11 +22,15 @@ img {
 
 html, body {
      background-image: url("../images/background.jpg");
-     color: #212121;
-     font-family: Georgia,Times,'Times New Roman',serif;
+     color: #583119;
+     font-family: arial;
      font-size: 100%;
      height: 100%;
      text-align: justify;
+}
+
+ul {
+	list-style-position: inside;
 }
 
 #header {
@@ -35,91 +39,76 @@ html, body {
 }
 
 #innerHeader {
-     background-image: url('../images/trasp2.png');
-     border: 2px solid #212121;
+     background-color: #d8b083;
      border-bottom: none;
-     border-top-left-radius: 13px;
-     border-top-right-radius: 13px;
+     border-radius: 15px;
      margin: 0pt auto;
-     overflow: auto;
-     padding-left: 10px;
-     padding-right: 10px;
+     padding-left: 20px;
+     padding-right: 20px;
      padding-top: 10px;
      width: 900px;
  }
+ 
+#innerHeader .contatti {
+	float:right;
+	padding: 10px;
+	color: #583119;
+	font-weight: bold;
+	text-align: right;
+}
 
+#innerHeader h3 {
+	color: #ffffff;
+	margin: 10px;
+	font-style: italic;
+}
 
 #header a {
      color: #FFFFFF;
-}
-
-#header h1 {
-     color: #FFFFFF;
-     float: left;
-     font-size: x-large;
-     font-weight: bold;
-     margin-bottom: 30px;
-     padding-right: 20px;
-     text-transform: uppercase;
-}
-
-#header #titles {
-     float: left;
-     width: 50%;
-}
-
-#header h2 {
-     color: #FFFFFF;
-     font-size: large;
-     padding-left: 20px;
-     padding-top: 8px;
-     text-align: right;
-}
-
-#header h3 {
-     color: #CCCCCC;
-     font-size: small;
-     padding-left: 20px;
-     padding-top: 20px;
-     text-align: right;
-}
-
-#header #headerContatti {
-     border-left: 1px solid #eeeeee;
-     color: #eeeeee;
-     float: right;
-     font-size: 0.6em;
-     line-height: 20px;
-     padding: 15px 15px 15px 25px;
 }
 
 #header ul {
      clear: both;
      list-style-type: none;
      width: 100%;
+     font-family: cursive, verdana;
+     text-transform: uppercase;
 }
 
 #header ul li {
      float: left;
      font-weight: bold;
-     margin-right: 5px;
+     margin-right: 10px;
      text-align: center;
-     width: 120px;
+     width: 150px;
+     line-height: 25px;
 }
 
 #header ul li a {
-     border-top-left-radius: 10px;
-     border-top-right-radius: 10px;
      color: #FFFFFF;
      display: block;
      padding: 4px 4px 4px 0px;
      text-decoration: none;
+     background-color: #583119;
+     border-radius: 5px;
+     position: relative;
 }
 
-#header ul li a:hover, #header ul li a.active {
-     background-color: #bdb49d;
-     color: #212121;
+
+
+#header ul li a:hover div.menu-div-1, #header ul li a.active div.menu-div-1 {
+     position:absolute;
+     top: 0px;
+     height:70px;
+     width: 150px;
+     background-color: #583119;
+     border-radius: 5px;
 }
+
+#header ul li a:hover div.menu-div-1 div, #header ul li a.active div.menu-div-1 div {
+	margin-top: 45px;
+}
+
 
 #wrapper {
      height: auto ! important;
@@ -128,35 +117,77 @@ html, body {
 }
 
 #content {
-     background-image: url("../images/trasp.png");
-     border: 2px solid #212121;
-     border-top: none;
-     font-size: small;
+     background-color: #ffffff;
+     font-size: medium;
      line-height: 25px;
-     margin: 0px auto;
-     padding: 10px;
-     width: 900px;
-     border-bottom-left-radius: 13px;
-     border-bottom-right-radius: 13px;
+     margin: 10px auto 0px auto;
+     padding: 0px;
+     width: 930px;
+     border-radius: 15px;
+     border: 5px solid #d8b083;
 }
 
-#content img {
-	border: 2px solid #eeeeee;
+#content #innerContent {
+	padding: 30px 20px 20px 30px;
+}
+
+#content h1 {
+	color: #d8b083;
+	text-transform: uppercase;
+	font-family: cursive, verdana;
+	border-top-right-radius: 5px;
+	margin-bottom: 20px;
 }
 
 #content h2 {
-     color: #6a0c0c;
-     margin: 1.3em 0pt 0.5em;
+	color: #583119;
+	background-color: #d8b083;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 160px;
+	padding: 5px 5px 5px 30px;
+	position: relative;
+	left: -30px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	font-family: cursive, verdana;
+	text-transform: lowercase;
 }
 
-#content h3 {
-     color: #6a0c0c;
-     margin: 1em 0pt 0.3em;
+.content-home {
+	background-image: url('../images/home.jpg');
+	min-height:658px;
+	padding: 0px !important;
+	background-repeat: no-repeat;
 }
+
+#content img {
+	border: 2px solid #583119;
+	border-radius: 5px;
+	margin-left: 20px;
+}
+
 
 #content a:hover {
      text-decoration: underline;
 }
+
+#content p, #content .para {
+	margin-bottom: 20px;
+	width: 54%;
+}
+
+#content ul.defaultList {
+	margin-bottom: 10px;
+}
+
+#content .info {
+	color: #d8b083;
+	font-family: cursive;
+	font-style: italic;
+	font-weight: bold;
+}
+ 
 
 #footer, #push {
      height: 4em;
@@ -170,7 +201,28 @@ html, body {
 #innerFooter {
      font-size: 0.7em;
      margin: 0pt auto;
-     padding: 10px;
+     padding: 20px;
      text-align: center;
      width: 900px;
+}
+
+.centeredFooter {
+	margin: 0 auto;
+	width: 520px;
+}
+
+.centeredFooter img {
+	float:left;
+	width: 16px;
+}
+
+.centeredFooter p {
+	float:left; 
+	width: 93%;
+	font-weight: bold;
+}
+
+#innerFooter a {
+	text-decoration: underlined !important;
+	color: #ffffff !important;
 }

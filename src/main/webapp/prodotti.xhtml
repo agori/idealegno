@@ -51,8 +51,8 @@
 		<ul id="gallery">
 			<ui:repeat value="#{prodottiBean.prodotti}" var="it">
 			<li>
-				<a href="#{cpath}/#{it.pathLarge}">
-					<img src="#{cpath}/#{it.path}"/>
+				<a href="#{cpath}#{it.pathLarge}">
+					<img src="#{cpath}#{it.path}"/>
 				</a>
 			</li>
 			</ui:repeat>

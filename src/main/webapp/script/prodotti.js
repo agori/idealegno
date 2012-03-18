@@ -21,7 +21,7 @@ function showCategory(category) {
 
 	var ghtml = "<ul style='position:absolute;left:" + -galleryEl.outerWidth() + "px;' >";
 	$($(gallery[category])[0].items).each(function(index, value) {
-		ghtml += "<li><a href='" + cpath + "/" + value.pathLarge + "'><img src='" + cpath + "/" + value.path + "'/></a></li>";
+		ghtml += "<li><a href='" + cpath + value.pathLarge + "'><img src='" + cpath + value.path + "'/></a></li>";
 	});
 	ghtml += "</ul>";
 

@@ -16,6 +16,7 @@
       <url-mapping id="prodotti"> 
           <pattern value="/prodotti" /> 
           <view-id value="/prodotti.xhtml" />
+          <action>#{prodottiBean.loadProdotti}</action>
       </url-mapping>
       
       <url-mapping id="category"> 

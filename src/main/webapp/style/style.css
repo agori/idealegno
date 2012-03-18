@@ -1,5 +1,5 @@
 .prodotti {
-    
+
 }
 
 .prodotti ul.menu {
@@ -29,9 +29,12 @@
 	color: #583119;
 }
 
+#gallery {
+    overflow: hidden;
+    position: relative;
+}
 
-
-ul#gallery {
+#gallery ul {
 	list-style-type: none;
 	width: 100%;
 }

@@ -11,8 +11,10 @@ public class ProdottiBean {
 	
 	private String category = DataStore.COMP_ACC;
 	
+	private List<Item> prodotti;
+	
 	public void loadProdotti() {
-		System.out.println(getCategory());
+		prodotti = DataStore.store.get(category).getItems();
 	}
 
 	public String getCategory() {
@@ -24,7 +26,11 @@ public class ProdottiBean {
 	}
 	
 	public List<Item> getProdotti() {
-		return DataStore.store.get(category).getItems();
+		return prodotti;
+	}
+	
+	public String getJsonStore() {
+		return DataStore.jsonStore;
 	}
 
 }

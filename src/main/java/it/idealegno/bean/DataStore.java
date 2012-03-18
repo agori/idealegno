@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import net.sf.json.JSONObject;
+
 public class DataStore {
 	
 	public static class Category {
@@ -37,7 +39,8 @@ public class DataStore {
 			new Item("esempi-pezzi"),
 			new Item("maniglia-serradura"),
 			new Item("portabott"),
-			new Item("taglieri")
+			new Item("taglieri"),
+			new Item("calendario")
 	);
 	
 	static public Category targhe = new Category(TARGHE,
@@ -51,6 +54,7 @@ public class DataStore {
 			new Item("esp-cart"),
 			new Item("espositore-bianco-grande"),
 			new Item("espositore-cassettini"),
+			new Item("espositore-cassettini-part"),
 			new Item("espositore-legno-serradura"),
 			new Item("espositore-pedon"),
 			new Item("portamaniglie")
@@ -74,7 +78,10 @@ public class DataStore {
 			put(AST_SCAT, astucciScatole);
 		}
 		
-	};
+	}; 
+	
+	
+	final static String jsonStore = JSONObject.fromObject(store).toString();
 	
 
 }

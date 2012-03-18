@@ -179,10 +179,12 @@ ul {
 
 #content ul.defaultList {
 	margin-bottom: 10px;
+	list-style-position: outside;
+	margin-left: 30px;
 }
 
 #content .info {
-	color: #d8b083;
+	color: #583119;
 	font-family: cursive;
 	font-style: italic;
 	font-weight: bold;
@@ -223,6 +225,6 @@ ul {
 }
 
 #innerFooter a {
-	text-decoration: underlined !important;
+	text-decoration: underline !important;
 	color: #ffffff !important;
 }

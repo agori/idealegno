@@ -1,13 +1,23 @@
+function showCategoryOnHash() {
+	var category = window.location.hash == '' ? 'complementi-accessori' : window.location.hash.substring(1);
+	showCategory(category);
+}
+
+
+$(function(){
+  $(window).hashchange( function(){
+	  showCategoryOnHash();
+  })
+});
+
+
 $(document).ready(function() {
  	fancy();
  	$(".menu a").click(function() {
- 		showCategory(this.rel);
+ 		window.location.hash = this.rel;
  		return false;
  	});
- 	
- 	if (window.location.hash != null) {
- 		showCategory(window.location.hash.substring(1));
- 	}
+ 	showCategoryOnHash();
 });
 
 function fancy() {
@@ -16,7 +26,6 @@ function fancy() {
 
 
 function showCategory(category) {
-	
 	var galleryEl = $("#gallery");
 
 	var ghtml = "<ul style='position:absolute;left:" + -galleryEl.outerWidth() + "px;' >";
@@ -41,6 +50,9 @@ function showCategory(category) {
 	
 	$(".menu a.selected").removeClass('selected');
 	$(".menu a[rel=" + category + "]").addClass('selected');
-	window.location.hash = category;
+	
+	if (window.location.hash != '') {
+		window.location.hash = category;
+	}
 	
 }

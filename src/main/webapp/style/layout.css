@@ -24,7 +24,7 @@ html, body {
      background-image: url("../images/background.jpg");
      color: #583119;
      font-family: arial;
-     font-size: 100%;
+     font-size: 95%;
      height: 100%;
      text-align: justify;
 }
@@ -34,7 +34,7 @@ ul {
 }
 
 #header {
-     padding-top: 20px;
+     padding-top: 10px;
      width: 100%;
 }
 
@@ -45,7 +45,7 @@ ul {
      margin: 0pt auto;
      padding-left: 20px;
      padding-right: 20px;
-     padding-top: 10px;
+     padding-top: 0px;
      width: 900px;
  }
  
@@ -59,7 +59,7 @@ ul {
 
 #innerHeader h3 {
 	color: #ffffff;
-	margin: 10px;
+	margin-bottom: 10px;
 	font-style: italic;
 }
 
@@ -81,7 +81,7 @@ ul {
      margin-right: 10px;
      text-align: center;
      width: 150px;
-     line-height: 25px;
+     line-height: 20px;
 }
 
 #header ul li a {
@@ -99,14 +99,14 @@ ul {
 #header ul li a:hover div.menu-div-1, #header ul li a.active div.menu-div-1 {
      position:absolute;
      top: 0px;
-     height:70px;
+     height:60px;
      width: 150px;
      background-color: #583119;
      border-radius: 5px;
 }
 
 #header ul li a:hover div.menu-div-1 div, #header ul li a.active div.menu-div-1 div {
-	margin-top: 45px;
+	margin-top: 35px;
 }
 
 
@@ -118,8 +118,7 @@ ul {
 
 #content {
      background-color: #ffffff;
-     font-size: medium;
-     line-height: 25px;
+     font-size: 100%;
      margin: 10px auto 0px auto;
      padding: 0px;
      width: 930px;
@@ -128,7 +127,7 @@ ul {
 }
 
 #content #innerContent {
-	padding: 30px 20px 20px 30px;
+	padding: 20px 20px 20px 30px;
 }
 
 #content h1 {
@@ -136,13 +135,13 @@ ul {
 	text-transform: uppercase;
 	font-family: cursive, verdana;
 	border-top-right-radius: 5px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 #content h2 {
 	color: #583119;
 	background-color: #d8b083;
-	margin-top: 10px;
+	margin-top: 5px;
 	margin-bottom: 10px;
 	width: 160px;
 	padding: 5px 5px 5px 30px;
@@ -156,7 +155,7 @@ ul {
 
 .content-home {
 	background-image: url('../images/home.jpg');
-	min-height:658px;
+	min-height:548px;
 	padding: 0px !important;
 	background-repeat: no-repeat;
 }
@@ -178,6 +177,7 @@ ul {
 }
 
 #content ul.defaultList {
+	margin-top: 5px;
 	margin-bottom: 10px;
 	list-style-position: outside;
 	margin-left: 30px;
@@ -201,7 +201,7 @@ ul {
 }
 
 #innerFooter {
-     font-size: 0.7em;
+     font-size: 0.8em;
      margin: 0pt auto;
      padding: 20px;
      text-align: center;

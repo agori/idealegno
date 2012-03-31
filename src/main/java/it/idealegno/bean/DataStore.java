@@ -37,7 +37,7 @@ public class DataStore {
 			new Item("albero"),
 			new Item("appendini"),
 			new Item("esempi-pezzi"),
-			new Item("maniglia-serradura"),
+			new Item("maniglia"),
 			new Item("portabott"),
 			new Item("taglieri"),
 			new Item("calendario")
@@ -47,7 +47,7 @@ public class DataStore {
 			new Item("espositore-queen-vittoria"),
 			new Item("portabott"),
 			new Item("targa-scritta-laser"),
-			new Item("targa-serradura")
+			new Item("targa")
 	);
 	
 	static public Category espositori = new Category(ESP, 
@@ -55,13 +55,13 @@ public class DataStore {
 			new Item("espositore-bianco-grande"),
 			new Item("espositore-cassettini"),
 			new Item("espositore-cassettini-part"),
-			new Item("espositore-legno-serradura"),
-			new Item("espositore-pedon"),
+			new Item("espositore-1"),
+			new Item("espositore-2"),
 			new Item("portamaniglie")
 	);
 	
 	static public Category astucciScatole = new Category(AST_SCAT,
-			new Item("portabott-soarda"),
+			new Item("portabott"),
 			new Item("scatola-pelle"),
 			new Item("scatole"),
 			new Item("urne")

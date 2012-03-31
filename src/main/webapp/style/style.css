@@ -42,9 +42,9 @@
 #gallery li {
 	float: left;
 	width: 25%;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	height: 200px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	height: 190px;
 }
 
 #gallery img {

@@ -51,10 +51,15 @@
 	margin-left: 10px !important;
 }
 
+#gallery .replacing img {
+	border-color: #ffffff !important;
+}
+
 #contatti {
      float: left;
      font-size: 0.9em;
      width: 37%;
+     line-height: 2em;
 }
 
 #contatti img {

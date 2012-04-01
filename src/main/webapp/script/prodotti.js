@@ -28,7 +28,7 @@ function fancy() {
 function showCategory(category) {
 	var galleryEl = $("#gallery");
 
-	var ghtml = "<ul style='position:absolute;left:" + -galleryEl.outerWidth() + "px;' >";
+	var ghtml = "<ul class='replacing' style='position:absolute;left:" + -galleryEl.outerWidth() + "px;' >";
 	$($(gallery[category])[0].items).each(function(index, value) {
 		ghtml += "<li><a href='" + cpath + value.pathLarge + "'><img src='" + cpath + value.path + "'/></a></li>";
 	});
@@ -42,6 +42,7 @@ function showCategory(category) {
 	
 	newList.animate({left: 0}, function() {
 		newList.css({position: 'static'})
+		newList.removeClass('replacing');
 		galleryEl.html(newList);
 		fancy();
 	});

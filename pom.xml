@@ -42,7 +42,7 @@
 			<build>
 				<finalName>idealegno</finalName>
 				<plugins>
-					<plugin>
+					<plugin> 
 						<artifactId>maven-war-plugin</artifactId>
 						<version>2.1.1</version>
 						<configuration>
